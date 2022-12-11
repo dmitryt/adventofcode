@@ -26,9 +26,7 @@ def process_operations(line, rows):
   end_row = rows[int(end) - 1]
   i_amount = int(amount)
   # move items to the end row
-  slice_reversed = start_row[len(start_row)-i_amount:]
-  slice_reversed.reverse()
-  end_row.extend(slice_reversed)
+  end_row.extend(start_row[len(start_row)-i_amount:])
   # remove items from the start row
   rows[int(start) - 1] = rows[int(start) - 1][:-i_amount]
 
