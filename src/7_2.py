@@ -1,5 +1,3 @@
-import functools
-
 filepath = 'input/7.txt'
 
 class TreeNode:
