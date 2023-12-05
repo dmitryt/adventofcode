@@ -65,9 +65,5 @@ def exec():
     for _, amount in min_set.items():
       set_result *= amount
     result += set_result
-  print(min_sets)
   print("Result:", result)
-  # print([game.index for game in games])
-  # print(sum(game.index for game in games))
-
 exec()
